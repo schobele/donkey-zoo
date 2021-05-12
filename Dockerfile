@@ -26,7 +26,7 @@ RUN . /$venv_name/bin/activate && pip install h5py==2.10.0
 
 # Install KERAS VIS and ffmpeg for video generation
 RUN . /$venv_name/bin/activate && pip install git+https://github.com/autorope/keras-vis.git
-RUN . /$venv_name/bin/activate && pip install opencv-python imgaug pandas
+RUN . /$venv_name/bin/activate && pip install opencv-python imgaug pandas kivy plotly PyYAML moviepy
 RUN apt-get -y install ffmpeg
 
 RUN . /$venv_name/bin/activate && donkey createcar --path ~/mycar --overwrite

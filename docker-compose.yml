@@ -8,6 +8,7 @@ services:
     ports:
       - "8000:8000"
       - "8887:8887"
+      - "8886:8886"
     stdin_open: true # docker run -i
     tty: true
     volumes:
