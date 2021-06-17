@@ -12,6 +12,7 @@ services:
     stdin_open: true # docker run -i
     tty: true
     volumes:
-      - ./docker_car:/root/mycar
+      - ./mycar:/root/mycar
+      - ./donkeycar/donkeycar:/root/donkeycar/donkeycar
     environment:
       - mode=docker
